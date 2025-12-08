@@ -3,81 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Doesn't Exist | StevensIT</title>
+  <title>404 Error | StevensIT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: #ffffff;
+      color: #1f2b6c;
+    }
+    
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 80px;
+    }
+    
+    .logo-container {
+      flex: 0 0 auto;
+    }
+    
+    .logo {
+      height: 250px;
+      width: auto;
+      max-width: 400px;
+    }
+    
+    .content {
+      flex: 1;
+      max-width: 600px;
+    }
+    
+    .label {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #1f2b6c;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    
+    h1 {
+      font-size: 64px;
+      font-weight: 400;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: #1f2b6c;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333333;
+      margin-bottom: 40px;
+    }
+    
+    .return-link {
+      color: #1f2b6c;
+      text-decoration: none;
+      font-size: 16px;
+      border-bottom: 2px solid #1f2b6c;
+      padding-bottom: 2px;
+      transition: opacity 0.2s;
+    }
+    
+    .return-link:hover {
+      opacity: 0.7;
+    }
+    
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #d4e4f7;
+      padding: 20px 60px;
+      text-align: center;
+    }
+    
+    .copyright {
+      color: #1f2b6c;
+      font-size: 12px;
+    }
+    
+    @media (max-width: 968px) {
+      main {
+        flex-direction: column;
+        padding: 60px 40px;
+        gap: 40px;
+        text-align: center;
+      }
+      
+      .logo {
+        height: 150px;
+      }
+      
+      h1 {
+        font-size: 48px;
+        letter-spacing: 4px;
+      }
+    }
+  </style>
 </head>
-<body style="margin:0; font-family: 'Georgia', 'Times New Roman', serif; background-color:#ffffff;">
+<body>
 
-  <div style="
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 20px;
-      box-sizing:border-box;
-  ">
-
-    <!-- Left: Shield -->
-    <div style="
-        flex:0 0 auto;
-        max-width:40%;
-        text-align:center;
-    ">
-      <img
-        src="/StevensIT-Logo.svg"
-        alt="StevensIT Shield"
-        style="
-          max-width:100%;
-          height:auto;
-          display:block;
-          margin:0 auto;
-      ">
+  <main>
+    <div class="logo-container">
+      <img src="/StevensIT-Logo.svg" alt="StevensIT" class="logo">
     </div>
-
-    <!-- Right: Text -->
-    <div style="
-        flex:1 1 0;
-        padding-left:60px;
-        box-sizing:border-box;
-        color:#1f2b6c;
-    ">
-
-      <h1 style="
-          font-size:48px;
-          margin:0 0 20px 0;
-          line-height:1.2;
-          color:#1f2b6c;
-          font-weight:normal;
-      ">
-        Page Doesn't Exist
-      </h1>
-
-      <p style="
-          font-size:18px;
-          line-height:1.6;
-          margin:0 0 30px 0;
-          max-width:520px;
-          color:#333333;
-      ">
-        The link you clicked may be broken or the page may have been removed.
-      </p>
-
-      <a href="https://www.stevensed.org/stevensit"
-         style="
-           display:inline-block;
-           padding:12px 28px;
-           font-size:16px;
-           text-decoration:none;
-           background-color:#1f2b6c;
-           color:#ffffff;
-           border-radius:2px;
-           border:1px solid #1f2b6c;
-           cursor:pointer;
-      ">
-        Back to Homepage
-      </a>
+    
+    <div class="content">
+      <h1>404 Error</h1>
+      <p>Sorry, the page you are looking for cannot be found.</p>
+      <a href="https://www.stevensed.org/stevensit" class="return-link">Return to StevensIT.org</a>
     </div>
+  </main>
 
-  </div>
+  <footer>
+    <div class="copyright">© 2025 StevensIT</div>
+  </footer>
 
 </body>
 </html>
